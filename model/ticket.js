@@ -6,6 +6,7 @@ const TicketSchama = new Schema({
   title: { type: String },
   price: { type: String },
   seats: { type: String },
+  seat: { type: String },
   date: {
     type: String,
   },

@@ -32,6 +32,7 @@ module.exports = {
         if (price) ticketContent.price = price;
         if (title) ticketContent.title = title;
         ticketContent.seats = seat.length;
+        ticketContent.seat = seat.join(",");
         ticketContent.time = time;
         ticketContent.date = date;
 
