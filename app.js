@@ -19,12 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 if (loadSeed()) console.log("seed loaded");
 else console.log("error loading seed");
 
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-  })
-);
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.json("Please reffer to the API documentation to get access to endpoints");
