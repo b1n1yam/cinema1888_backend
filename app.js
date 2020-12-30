@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 if (loadSeed()) console.log("seed loaded");
 else console.log("error loading seed");
 
-app.use(cors());
+app.use(cors()); //enable all cors
 
 app.get("/", (req, res) => {
   res.json("Please reffer to the API documentation to get access to endpoints");
