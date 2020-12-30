@@ -20,6 +20,6 @@ router.route("/reserve/:date/:time").put(updateSeats);
 //@route GET /movie/tickets
 //@desc  list all tickets of users
 //@access public
-router.route("/ticket").put(getTickets);
+router.route("/ticket").get(getTickets);
 
 module.exports = router;
