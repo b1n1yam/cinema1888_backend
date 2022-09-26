@@ -1,0 +1,24 @@
+{
+  "name": "cinemabackend",
+  "version": "1.0.0",
+  "description": "a backend service for 1888 cinema mobile app",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon app",
+    "start": "node app"
+  },
+  "author": "Biniyam Daniel",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.0.1",
+    "mongoose": "^5.11.8",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
