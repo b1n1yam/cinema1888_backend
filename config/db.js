@@ -4,20 +4,8 @@ const db = config.get("mongoURI");
 
 const connectDB = async () => {
   try {
-    // await mongoose.connect(db, {
-    //   useNewUrlParser: true,
-    //   useCreateIndex: true,
-    //   useUnifiedTopology: true,
-    //   useFindAndModify: false,
-    // });
-    //<username>:<password>@mediabox-shard-00-00.am5ap.mongodb.net:27017,mediabox-shard-00-01.am5ap.mongodb.net:27017,mediabox-shard-00-02.am5ap.mongodb.net:27017/<dbname>?ssl=true&replicaSet=MediaBox-shard-0&authSource=admin&retryWrites=true&w=majority
-    mongodb: await mongoose.connect(
-      "mongodb://mediabox-shard-00-00.am5ap.mongodb.net:27017,mediabox-shard-00-01.am5ap.mongodb.net:27017,mediabox-shard-00-02.am5ap.mongodb.net:27017/<dbname>?ssl=true&replicaSet=MediaBox-shard-0&authSource=admin&retryWrites=true&w=majority",
-      {
-        auth: {
-          user: "bin",
-          password: "bin@mongo",
-        },
+  mongodb: await mongoose.connect(
+      db,
         useNewUrlParser: true,
         useCreateIndex: true,
         useUnifiedTopology: true,
